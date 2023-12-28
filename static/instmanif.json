@@ -1,0 +1,67 @@
+{
+    "Orcitects": {
+        "description": "A completely seperate, probably better game",
+        "dir": "orc/",
+        "rewrite": {
+            "Build/.*\\.data\\.gz$": "Build/WebGL.data.gz",
+            "Build/.*\\.framework\\.js\\.gz$": "Build/WebGL.framework.js.gz",
+            "Build/.*\\.loader\\.js$": "Build/WebGL.loader.js",
+            "Build/.*\\.wasm\\.gz$": "Build/WebGL.wasm.gz"
+        },
+        "direct": [
+            "(Build/.*)$"
+        ]
+    },
+    "Final build + post-event patch": {
+        "description": "The final build of the game WITH patch set 1 (5a0750a)",
+        "dir": "Final2/",
+        "rewrite": {
+            "Build/.*\\.data\\.gz$": "Build/FINAL_Web.data.gz",
+            "Build/.*\\.framework\\.js\\.gz$": "Build/FINAL_Web.framework.js.gz",
+            "Build/.*\\.loader\\.js$": "Build/FINAL_Web.loader.js",
+            "Build/.*\\.wasm\\.gz$": "Build/FINAL_Web.wasm.gz"
+        },
+        "direct": [
+            "(Build/.*)$"
+        ]
+    },
+    "Final build": {
+        "description": "The final build of the game as of 3:30 PM on 1/5/2024 (before the patch)",
+        "dir": "Final1/",
+        "rewrite": {
+            "Build/.*\\.data\\.gz$": "Build/FINAL_Web.data.gz",
+            "Build/.*\\.framework\\.js\\.gz$": "Build/FINAL_Web.framework.js.gz",
+            "Build/.*\\.loader\\.js$": "Build/FINAL_Web.loader.js",
+            "Build/.*\\.wasm\\.gz$": "Build/FINAL_Web.wasm.gz"
+        },
+        "direct": [
+            "(Build/.*)$"
+        ]
+    },
+    "Pre-final build": {
+        "description": "Author \"went fucking insane\" and \"pulled an all-nighter for this shit\"<br>(This version might require pressing the Full-screen button to use)",
+        "dir": "0453cf4ddf824f95031f60e523dc870a40a21536/",
+        "rewrite": {
+            "Build/.*\\.data\\.gz$": "Build/FINAL_Web.data.gz",
+            "Build/.*\\.framework\\.js\\.gz$": "Build/FINAL_Web.framework.js.gz",
+            "Build/.*\\.loader\\.js$": "Build/FINAL_Web.loader.js",
+            "Build/.*\\.wasm\\.gz$": "Build/FINAL_Web.wasm.gz"
+        },
+        "direct": [
+            "(Build/.*)$"
+        ]
+    },
+    "chaos": {
+        "description": "<span style=\"font-size: 1.5em;\">Rated M for Mature.</span><br>The version before all the weird stuff got removed.",
+        "dir": "829ed8a9fbc15eb56a00790cc375945c4c927d99/",
+        "rewrite": {
+            "Build/.*\\.data\\.gz$": "Build/FINAL_Web.data.gz",
+            "Build/.*\\.framework\\.js\\.gz$": "Build/FINAL_Web.framework.js.gz",
+            "Build/.*\\.loader\\.js$": "Build/FINAL_Web.loader.js",
+            "Build/.*\\.wasm\\.gz$": "Build/FINAL_Web.wasm.gz"
+        },
+        "direct": [
+            "(Build/.*)$"
+        ]
+    }
+}
